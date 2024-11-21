@@ -60,13 +60,9 @@ class UserController extends Controller
             'json' => $data,
         ]);
          
-            // Make a GET request to the OpenWeather API
-            
-            // Get the response body as an array
          dd($response);
 
-            // Handle the retrieved weather data as needed (e.g., pass it to a view)
-            // Simulated response for successful or failed update
+           
             if ($response) {
                 return redirect()->route('posts.index')->with('success', 'Post  successfully!');
             } else {
